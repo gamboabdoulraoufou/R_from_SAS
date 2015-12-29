@@ -21,16 +21,17 @@ print(12/a)
 
 **Package installation**
 ```R
+
+# Create dir package
 # 1- Download R package .tar.gz file for linux and .gzip file for 
 install.packages(<pathtopackage>, repos = NULL, type="source")
 
-# Create dir package
 mkdir R_packages
 cd R_âckages
 
 # Create temp dir to store installation file
 mkdir tmp
-export TMPDIR=/analytics/farpt/sasprogs/201512_Retention_model/R_packages/tmp
+export TMPDIR=~/R_packages/tmp
 R CMD INSTALL e1071_1.6-8.tar.gz
 
-install.packages("/analytics/farpt/sasprogs/201512_Retention_model/R_packages/e1071_1.6-8.tar.gz", repos = NULL, type="source")
+install.packages("~/R_packages/e1071_1.6-8.tar.gz", repos = NULL, type="source")
